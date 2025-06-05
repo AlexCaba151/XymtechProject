@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XymTech - Transformamos tu Infraestructura Digital</title>
+    <meta name="description" content="Soluciones integrales de tecnología, ciberseguridad y desarrollo de software para empresas">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/componets.css">
+    
+    <!-- Reemplaza la línea del favicon -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibG9nb0dyYWRpZW50IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3R5bGU9InN0b3AtY29sb3I6IzIyZDNlZSIvPgogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMyNTYzZWIiLz4KICAgIDwvbGluZWFyR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcng9IjQiIGZpbGw9InVybCgjbG9nb0dyYWRpZW50KSIvPgogIDxwYXRoIGQ9Ik03IDhMMTAgMTJMNyAxNiIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KICA8cGF0aCBkPSJNMTMgMTZIMTciIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=">
+</head>
+<body>
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 8L10 12L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13 16H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
+                    <span class="logo-text">XymTech</span>
+                </div>
+
+                <nav class="nav">
+                    <a href="#servicios" class="nav-link">Servicios</a>
+                    <a href="#portafolio" class="nav-link">Portafolio</a>
+                    <a href="#nosotros" class="nav-link">Nosotros</a>
+                    <a href="#contacto" class="nav-link">Contacto</a>
+                </nav>
+
+                <button class="btn btn-primary">
+                    <span class="mono-text">[ACCESO_DIRECTO]</span>
+                </button>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <nav class="mobile-nav">
+            <a href="#servicios" class="mobile-nav-link">Servicios</a>
+            <a href="#portafolio" class="mobile-nav-link">Portafolio</a>
+            <a href="#nosotros" class="mobile-nav-link">Nosotros</a>
+            <a href="#contacto" class="mobile-nav-link">Contacto</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="mono-text">[SISTEMA_INICIADO]</span> - Líderes en Soluciones Tecnológicas
+                </div>
+
+                <h1 class="hero-title">
+                    <span id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </h1>
+
+                <p class="hero-description">
+                    Soluciones integrales de tecnología, ciberseguridad y desarrollo de software para impulsar el crecimiento de tu empresa hacia el futuro digital.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="btn btn-primary btn-lg">
+                        Descubre Nuestros Servicios
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-outline btn-lg">
+                        <span class="mono-text">[CONSULTA_TÁCTICA]</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros Servicios Especializados</h2>
+                <p class="section-description">
+                    Ofrecemos soluciones tecnológicas integrales diseñadas para potenciar el crecimiento y la eficiencia de tu empresa.
+                </p>
+            </div>
+
+            <div class="services-grid" id="services-grid">
+                <!-- Services will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+<!-- Portfolio Section -->
+<section id="portafolio" class="portfolio">
+    <div class="container">
+        <div class="section-header">
+            <div class="badge">
+                <span class="mono-text">[CASOS_EXITOSOS]</span> - Proyectos Implementados
+            </div>
+            <h2 class="section-title">Nuestro Proyectos</h2>
+            <p class="section-description">
+                Explora algunos de nuestros proyectos más destacados y las soluciones tecnológicas que hemos implementado para nuestros clientes.
+            </p>
+        </div>
+
+        <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Portfolio items will be populated by JavaScript -->
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="about">
+        <div class="about-bg"></div>
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="badge">
+                        <span class="mono-text">[PERFIL_CORPORATIVO]</span> - Sobre XymTech
+                    </div>
+                    <h2 class="about-title">
+                        Innovación y Excelencia en
+                        <span class="highlight">Tecnología Empresarial</span>
+                    </h2>
+
+                    <div class="about-description">
+                        <p class="about-paragraph green-border">
+                            En <span class="highlight-green">XymTech</span>, nos mueve la pasión por la tecnología y el deseo de hacer una diferencia real en las vidas de nuestros clientes. Nos especializamos en crear soluciones tecnológicas personalizadas y de vanguardia, diseñadas para enfrentar los retos de un mundo digital que nunca deja de avanzar.
+                        </p>
+
+                        <p class="about-paragraph cyan-border">
+                            Con presencia en <span class="highlight-cyan">República Dominicana</span>, <span class="highlight-cyan">Puerto Rico</span> y <span class="highlight-cyan">Estados Unidos</span>, nuestro equipo está comprometido en brindar el soporte y la orientación necesarios para que cada cliente se sienta respaldado, no solo como un proveedor, sino como un verdadero socio en su camino hacia el éxito.
+                        </p>
+
+                        <p class="about-paragraph blue-border">
+                            Nos esforzamos por crear relaciones duraderas basadas en confianza, excelencia y un enfoque <span class="highlight-blue">100%</span> orientado a resultados. Ya sea que busques optimizar tus sistemas, proteger tus datos o mejorar la eficiencia operativa, en <span class="highlight-green">XymTech</span> tenemos las herramientas y la experiencia para ayudarte a avanzar.
+                        </p>
+
+                        <p class="about-paragraph purple-border">
+                            Sabemos que cada negocio es único, y por eso nos dedicamos a ofrecer soluciones a medida que realmente marquen la diferencia. Cuando eliges <span class="highlight-green">XymTech</span>, eliges un equipo comprometido, apasionado y preparado para acompañarte en cada paso hacia un futuro más tecnológico, seguro y exitoso.
+                        </p>
+
+                        <div class="terminal">
+                            <span class="terminal-prompt mono-text">root@xymtech:~$ </span>
+                            <span class="terminal-text">Estamos aquí para ayudarte a transformar tu visión en realidad.</span>
+                        </div>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card green">
+                            <div class="stat-number mono-text">[3]</div>
+                            <div class="stat-label">Países de Operación</div>
+                        </div>
+                        <div class="stat-card cyan">
+                            <div class="stat-number mono-text">[24/7]</div>
+                            <div class="stat-label">Monitoreo Activo</div>
+                        </div>
+                        <div class="stat-card blue">
+                            <div class="stat-number mono-text">[∞]</div>
+                            <div class="stat-label">Innovación Continua</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-terminal">
+                    <div class="terminal-window">
+                        <div class="terminal-header">
+                            <div class="terminal-prompt mono-text">$ system_status --check</div>
+                        </div>
+                        <div class="terminal-content">
+                            <div class="terminal-line cyan mono-text">✓ Network Infrastructure: ONLINE</div>
+                            <div class="terminal-line green mono-text">✓ Security Systems: ACTIVE</div>
+                            <div class="terminal-line blue mono-text">✓ Development Pipeline: RUNNING</div>
+                            <div class="terminal-line purple mono-text">✓ Client Support: 24/7</div>
+                            <div class="terminal-line yellow mono-text">✓ Innovation Lab: OPERATIONAL</div>
+                        </div>
+                        <div class="terminal-footer">
+                            <div class="terminal-prompt mono-text">$ echo "Ready to transform your business"</div>
+                            <div class="terminal-cursor">
+                                <span class="mono-text">└─$ </span><span class="cursor">█</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">¿Listo para Transformar tu Empresa?</h2>
+                <p class="cta-description">
+                    Contáctanos hoy y descubre cómo nuestras soluciones tecnológicas pueden impulsar el crecimiento de tu negocio.
+                </p>
+
+                <div class="newsletter">
+<form class="newsletter-form" id="newsletter-form" action="https://formsubmit.co/wmateo@xymtechcorp.com" method="POST">
+    <!-- Campos ocultos para configuración de FormSubmit -->
+    <input type="hidden" name="_subject" value="Nueva suscripción al newsletter - XymTech">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <!-- ❌ ELIMINAR esta línea: <input type="hidden" name="_next" value="..."> -->
+    
+    <input 
+        type="email" 
+        name="email" 
+        placeholder="Tu email empresarial" 
+        class="newsletter-input"
+        id="newsletter-email"
+        required
+    >
+    <button type="submit" class="btn btn-secondary">
+        <span class="mono-text" id="newsletter-btn-text">[HACK]</span>
+    </button>
+</form>
+                    <p class="newsletter-hint">
+                        <span class="mono-text green">//</span> Recibe actualizaciones sobre las últimas tendencias tecnológicas
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-title">Conecta con Nosotros</h2>
+                    <p class="contact-description">
+                        Estamos aquí para ayudarte a encontrar la solución tecnológica perfecta para tu empresa. Contáctanos y comencemos a trabajar juntos.
+                    </p>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.59531 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5865 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Teléfono</div>
+                                <div class="contact-value">📍 República Dominicana: +1 (829) 694-4456 <br>📍 Miami & Puerto Rico: +1 (305) 934-1411
+
+</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Email</div>
+                                <div class="contact-value">info@xymtechcorp.com <br>wmateo@xymtechcorp.com</div>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <div class="contact-label">Oficina</div>
+                                <div class="contact-value">Av roberto Pastoriza #14 Torre M2C</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3 class="card-title">
+                                <span class="mono-text green">[TRANSMITIR_MENSAJE]</span> Envíanos un Mensaje
+                            </h3>
+                            <p class="card-description">
+                                Completa el formulario y te contactaremos en menos de 24 horas
+                            </p>
+                        </div>
+                        <div class="card-content">
+<form class="contact-form" id="contact-form" action="https://formsubmit.co/wmateo@xymtechcorp.com" method="POST">
+    <!-- Campos ocultos para configuración de FormSubmit -->
+    <input type="hidden" name="_subject" value="Nuevo mensaje de contacto - XymTech">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <!-- ❌ ELIMINAR esta línea: <input type="hidden" name="_next" value="..."> -->
+    
+    <div class="form-row">
+        <input 
+            type="text" 
+            name="firstName" 
+            placeholder="Nombre" 
+            class="form-input"
+            required
+        >
+        <input 
+            type="text" 
+            name="lastName" 
+            placeholder="Apellido" 
+            class="form-input"
+            required
+        >
+    </div>
+    <input 
+        type="email" 
+        name="email" 
+        placeholder="Email empresarial" 
+        class="form-input"
+        required
+    >
+    <input 
+        type="text" 
+        name="company" 
+        placeholder="Empresa" 
+        class="form-input"
+        required
+    >
+    <textarea 
+        name="message" 
+        placeholder="Cuéntanos sobre tu proyecto..." 
+        rows="4" 
+        class="form-textarea"
+        required
+    ></textarea>
+    <button type="submit" class="btn btn-primary btn-full" id="contact-submit">
+        <span class="mono-text" id="contact-btn-text">[EJECUTAR_TRANSMISIÓN]</span>
+    </button>
+</form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 8L10 12L7 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M13 16H17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</div>
+                        <span class="logo-text">XymTech</span>
+                    </div>
+                    <p class="footer-description">
+                        Transformando empresas a través de soluciones tecnológicas innovadoras y servicios de consultoría especializados.
+                    </p>
+                    <div class="footer-copyright">
+                        © 2025 XymTech. Todos los derechos reservados.
+                        <span class="mono-text green">[CLASIFICADO]</span>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-title">Servicios</h4>
+                    <ul class="footer-list">
+                        <li><a href="#" class="footer-link">Outsourcing</a></li>
+                        <li><a href="#" class="footer-link">Redes y Fibra</a></li>
+                        <li><a href="#" class="footer-link">Ciberseguridad</a></li>
+                        <li><a href="#" class="footer-link">Desarrollo</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4 class="footer-title">Empresa</h4>
+                    <ul class="footer-list">
+                        <li><a href="#nosotros" class="footer-link">Sobre Nosotros</a></li>
+                        <li><a href="#portafolio" class="footer-link">Portafolio</a></li>
+                        <li><a href="#" class="footer-link">Carreras</a></li>
+                        <li><a href="#contacto" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/portfolio.js"></script>
+    <script src="scripts/forms.js"></script>
+</body>
+</html>
