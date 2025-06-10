@@ -148,7 +148,6 @@ body {
 .logo-icon {
     width: 2.5rem;
     height: 2.5rem;
-    background: linear-gradient(135deg, var(--cyan-400), var(--blue-600));
     border-radius: 0.5rem;
     display: flex;
     align-items: center;
